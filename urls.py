@@ -8,9 +8,9 @@
 # Licensed under GNU/GPLv3
 # Copyright (C) 2019, Oğuzhan Eroğlu (https://oguzhaneroglu.com/) <rohanrhu2@gmail.com>
 
-import api.url
+from .api.url import URLS
 
-urls = api.url.URLS({
+urls = URLS({
     "main": {
         "url": "/",
         "match": "^/$",

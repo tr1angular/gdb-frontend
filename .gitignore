@@ -12,3 +12,5 @@ dist
 gdbfrontend.egg-info
 mingw64
 .DS_Store
+venv/
+.idea/

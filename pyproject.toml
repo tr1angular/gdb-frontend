@@ -1,0 +1,29 @@
+[project]
+name = "gdb-frontend"
+version = "0.11.4"
+description = "GDBFrontend is an easy, flexible and extensionable GUI debugger."
+authors = [
+    { name="Oğuzhan Eroğlu", email="rohanrhu2@gmail.com" }
+]
+requires-python = ">=3.6"
+license = "GPL v3.0"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Programming Language :: C",
+    "Programming Language :: C++",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Debuggers",
+    "Topic :: Software Development :: Disassemblers",
+    "Topic :: Software Development :: Testing",
+]
+
+
+[build-system]
+requires = ["setuptools", "wheel", "gdb", "tmux"]
+build-backend = "setuptools.build_meta"
