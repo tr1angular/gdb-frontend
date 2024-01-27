@@ -27,3 +27,6 @@ classifiers = [
 [build-system]
 requires = ["setuptools", "wheel", "gdb", "tmux"]
 build-backend = "setuptools.build_meta"
+
+[project.scripts]
+run = "src.gdbfrontend.run"
