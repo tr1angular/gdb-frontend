@@ -345,7 +345,6 @@ def exiting():
 
     print("Stopped GDBFrontend.")
 
-
 try:
     proc = subprocess.run([gdb_executable, "--configuration"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
@@ -478,3 +477,5 @@ try:
 except KeyboardInterrupt as e:
     print("Keyboard interrupt.")
     exit(0)
+
+

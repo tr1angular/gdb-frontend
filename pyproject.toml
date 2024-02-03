@@ -6,7 +6,7 @@ authors = [
     { name="Oğuzhan Eroğlu", email="rohanrhu2@gmail.com" }
 ]
 requires-python = ">=3.6"
-license = "GPL v3.0"
+license = { file = "LICENSE" }
 readme = "README.md"
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -25,8 +25,8 @@ classifiers = [
 
 
 [build-system]
-requires = ["setuptools", "wheel", "gdb", "tmux"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project.scripts]
-run = "src.gdbfrontend.run"
+run = "gdbfrontend.run:run"
