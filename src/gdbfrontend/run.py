@@ -30,7 +30,7 @@ import webbrowser
 config.init()
 globalvars.init()
 
-path = os.path.dirname(os.path.realpath(__file__))
+path = os.path.dirname(os.path.join(os.getcwd(), "src"))
 
 gdb_args = ""
 gdb_executable = "gdb"
@@ -363,9 +363,9 @@ try:
             " -f \"" + path + "/tmux.conf\" new-session -s " + terminal_id +
             " -d '" + gdb_executable +
             " " + gdb_args +
-            " -ex \"python import sys, os; sys.path.insert(0, \\\"" + path + "\\\"); import config, json, base64; config.init(); " +
-            "config.setJSON(base64.b64decode(\\\"" + base64.b64encode(
-                json.dumps(arg_config).encode()).decode() + "\\\").decode()); import gdbfrontend\"; read;'"
+            " -ex \"python import sys, os; sys.path.insert(0, \\\"" + path + "\\\"); from src.gdbfrontend.config import init, setJSON; import json, base64; init(); " +
+            "setJSON(base64.b64decode(\\\"" + base64.b64encode(
+                json.dumps(arg_config).encode()).decode() + "\\\").decode()); import src.gdbfrontend.gdbfrontend\"; read;'"
         )
     else:
         os.system(
@@ -423,9 +423,9 @@ try:
             " \"" +
             gdb_executable +
             " " + gdb_args +
-            " -ex \\\"python import sys, os; sys.path.insert(0, '" + path + "'); import config, json, base64; config.init(); " +
-            "config.setJSON(base64.b64decode('" + base64.b64encode(
-                json.dumps(arg_config).encode()).decode() + "').decode()); import gdbfrontend\\\"; read;"
+            " -ex \\\"python import sys, os; sys.path.insert(0, '" + path + "'); from src.gdbfrontend.config import init, setJSON; import, json, base64; init(); " +
+            "setJSON(base64.b64decode('" + base64.b64encode(
+                json.dumps(arg_config).encode()).decode() + "').decode()); import src.gdbfrontend.gdbfrontend\\\"; read;"
                                                             "\" "
         )
         os.system(

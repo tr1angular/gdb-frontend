@@ -14,192 +14,192 @@ urls = URLS({
     "main": {
         "url": "/",
         "match": "^/$",
-        "module": "url_modules.main.main"
+        "module": "src.gdbfrontend.url_modules.main.main"
     },
     "api-state": {
         "url": "/api/state",
         "match": "^/api/state$",
-        "module": "url_modules.api.state"
+        "module": "src.gdbfrontend.url_modules.api.state"
     },
     "api-state-get": {
         "url": "/api/state/{info}",
         "match": "^/api/state/(.+)$",
-        "module": "url_modules.api.state"
+        "module": "src.gdbfrontend.url_modules.api.state"
     },
     "api-shell": {
         "url": "/api/shell",
         "match": "^/api/shell$",
-        "module": "url_modules.api.shell"
+        "module": "src.gdbfrontend.url_modules.api.shell"
     },
     "api-event": {
         "url": "/api/event",
         "match": "^/api/event$",
-        "module": "url_modules.api.event"
+        "module": "src.gdbfrontend.url_modules.api.event"
     },
     "api-fs-list": {
         "url": "/api/fs/list",
         "match": "^/api/fs/list$",
-        "module": "url_modules.api.fs.list"
+        "module": "src.gdbfrontend.url_modules.api.fs.list"
     },
     "api-fs-read": {
         "url": "/api/fs/read",
         "match": "^/api/fs/read$",
-        "module": "url_modules.api.fs.read"
+        "module": "src.gdbfrontend.url_modules.api.fs.read"
     },
     "api-fs-write": {
         "url": "/api/fs/write",
         "match": "^/api/fs/write$",
-        "module": "url_modules.api.fs.write"
+        "module": "src.gdbfrontend.url_modules.api.fs.write"
     },
     "api-sources": {
         "url": "/api/sources$",
         "match": "^/api/sources$",
-        "module": "url_modules.api.sources"
+        "module": "src.gdbfrontend.url_modules.api.sources"
     },
     "api-registers": {
         "url": "/api/registers$",
         "match": "^/api/registers$",
-        "module": "url_modules.api.registers"
+        "module": "src.gdbfrontend.url_modules.api.registers"
     },
     "api-breakpoint-add": {
         "url": "/api/breakpoint/add",
         "match": "^/api/breakpoint/add$",
-        "module": "url_modules.api.breakpoint.add"
+        "module": "src.gdbfrontend.url_modules.api.breakpoint.add"
     },
     "api-breakpoint-del": {
         "url": "/api/breakpoint/del",
         "match": "^/api/breakpoint/del$",
-        "module": "url_modules.api.breakpoint.del"
+        "module": "src.gdbfrontend.url_modules.api.breakpoint.del"
     },
     "api-breakpoint-set-enabled": {
         "url": "/api/breakpoint/set_enabled",
         "match": "^/api/breakpoint/set_enabled$",
-        "module": "url_modules.api.breakpoint.set_enabled"
+        "module": "src.gdbfrontend.url_modules.api.breakpoint.set_enabled"
     },
     "api-breakpoint-set-condition": {
         "url": "/api/breakpoint/set_condition",
         "match": "^/api/breakpoint/set_condition$",
-        "module": "url_modules.api.breakpoint.set_condition"
+        "module": "src.gdbfrontend.url_modules.api.breakpoint.set_condition"
     },
     "api-runtime-signal": {
         "url": "/api/runtime/signal",
         "match": "^/api/runtime/signal",
-        "module": "url_modules.api.runtime.signal"
+        "module": "src.gdbfrontend.url_modules.api.runtime.signal"
     },
     "api-runtime-terminate": {
         "url": "/api/runtime/terminate",
         "match": "^/api/runtime/terminate",
-        "module": "url_modules.api.runtime.terminate"
+        "module": "src.gdbfrontend.url_modules.api.runtime.terminate"
     },
     "api-runtime-attach": {
         "url": "/api/runtime/attach",
         "match": "^/api/runtime/attach$",
-        "module": "url_modules.api.runtime.attach"
+        "module": "src.gdbfrontend.url_modules.api.runtime.attach"
     },
     "api-runtime-run": {
         "url": "/api/runtime/run",
         "match": "^/api/runtime/run$",
-        "module": "url_modules.api.runtime.run"
+        "module": "src.gdbfrontend.url_modules.api.runtime.run"
     },
     "api-runtime-pause": {
         "url": "/api/runtime/pause",
         "match": "^/api/runtime/pause$",
-        "module": "url_modules.api.runtime.pause"
+        "module": "src.gdbfrontend.url_modules.api.runtime.pause"
     },
     "api-runtime-step": {
         "url": "/api/runtime/step",
         "match": "^/api/runtime/step$",
-        "module": "url_modules.api.runtime.step"
+        "module": "src.gdbfrontend.url_modules.api.runtime.step"
     },
     "api-runtime-next": {
         "url": "/api/runtime/next",
         "match": "^/api/runtime/next$",
-        "module": "url_modules.api.runtime.next"
+        "module": "src.gdbfrontend.url_modules.api.runtime.next"
     },
     "api-runtime-stepi": {
         "url": "/api/runtime/stepi",
         "match": "^/api/runtime/stepi$",
-        "module": "url_modules.api.runtime.stepi"
+        "module": "src.gdbfrontend.url_modules.api.runtime.stepi"
     },
     "api-runtime-continue": {
         "url": "/api/runtime/continue",
         "match": "^/api/runtime/continue$",
-        "module": "url_modules.api.runtime.continue"
+        "module": "src.gdbfrontend.url_modules.api.runtime.continue"
     },
     "api-thread-switch": {
         "url": "/api/thread/switch",
         "match": "^/api/thread/switch$",
-        "module": "url_modules.api.thread.switch"
+        "module": "src.gdbfrontend.url_modules.api.thread.switch"
     },
     "api-stack-trace": {
         "url": "/api/stack/trace",
         "match": "^/api/stack/trace$",
-        "module": "url_modules.api.stack.trace"
+        "module": "src.gdbfrontend.url_modules.api.stack.trace"
     },
     "api-stack-switch": {
         "url": "/api/stack/switch",
         "match": "^/api/stack/switch$",
-        "module": "url_modules.api.stack.switch"
+        "module": "src.gdbfrontend.url_modules.api.stack.switch"
     },
     "api-frame-variable": {
         "url": "/api/frame/variable",
         "match": "^/api/frame/variable$",
-        "module": "url_modules.api.frame.variable"
+        "module": "src.gdbfrontend.url_modules.api.frame.variable"
     },
     "api-load": {
         "url": "/api/load",
         "match": "^/api/load$",
-        "module": "url_modules.api.load"
+        "module": "src.gdbfrontend.url_modules.api.load"
     },
     "api-connect": {
         "url": "/api/connect",
         "match": "^/api/connect$",
-        "module": "url_modules.api.connect"
+        "module": "src.gdbfrontend.url_modules.api.connect"
     },
     "api-disassemble": {
         "url": "/api/disassemble",
         "match": "^/api/disassemble$",
-        "module": "url_modules.api.disassemble"
+        "module": "src.gdbfrontend.url_modules.api.disassemble"
     },
     "api-disassemble-frame": {
         "url": "/api/disassemble-frame",
         "match": "^/api/disassemble-frame$",
-        "module": "url_modules.api.disassemble_frame"
+        "module": "src.gdbfrontend.url_modules.api.disassemble_frame"
     },
     "api-switch-theme": {
         "url": "/api/switch-theme",
         "match": "^/api/switch-theme$",
-        "module": "url_modules.api.switch_theme"
+        "module": "src.gdbfrontend.url_modules.api.switch_theme"
     },
     "api-enhanced-collabration-enable": {
         "url": "/api/collabration/enhanced-collabration-enable",
         "match": "^/api/collabration/enhanced-collabration-enable$",
-        "module": "url_modules.api.collabration.enhanced_collabration_enable"
+        "module": "src.gdbfrontend.url_modules.api.collabration.enhanced_collabration_enable"
     },
     "api-enhanced-collabration-disable": {
         "url": "/api/collabration/enhanced-collabration-disable",
         "match": "^/api/collabration/enhanced-collabration-disable$",
-        "module": "url_modules.api.collabration.enhanced_collabration_disable"
+        "module": "src.gdbfrontend.url_modules.api.collabration.enhanced_collabration_disable"
     },
     "api-process-all": {
         "url": "/api/process/all",
         "match": "^/api/process/all$",
-        "module": "url_modules.api.process.all"
+        "module": "src.gdbfrontend.url_modules.api.process.all"
     },
     "api-process-sigkill": {
         "url": "/api/process/sigkill",
         "match": "^/api/process/sigkill$",
-        "module": "url_modules.api.process.sigkill"
+        "module": "src.gdbfrontend.url_modules.api.process.sigkill"
     },
     "api-process-sigterm": {
         "url": "/api/process/sigterm",
         "match": "^/api/process/sigterm$",
-        "module": "url_modules.api.process.sigterm"
+        "module": "src.gdbfrontend.url_modules.api.process.sigterm"
     },
     "main-layout": {
         "url": "/{layout}/",
         "match": "^/(.+?)/?$",
-        "module": "url_modules.main.main",
+        "module": "src.gdbfrontend.url_modules.main.main",
         "force_slash": True
     }
 })
